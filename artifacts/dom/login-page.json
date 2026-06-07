@@ -1,0 +1,23 @@
+[
+  {
+    "tag": "INPUT",
+    "id": null,
+    "name": "Email Input",
+    "type": "email",
+    "text": null
+  },
+  {
+    "tag": "INPUT",
+    "id": null,
+    "name": "Password Input",
+    "type": "password",
+    "text": null
+  },
+  {
+    "tag": "BUTTON",
+    "id": null,
+    "name": null,
+    "type": "submit",
+    "text": "Sign in to BridgeConnect"
+  }
+]
