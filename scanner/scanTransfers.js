@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 (async () => {
-  const url = process.argv[2] || 'https://qa.bridgeconnect.uk';
+  const url = process.argv[2] || 'https://qa.bridgeconnect.uk/ha-transfers/';
 
   const domDir = path.join(__dirname, '../artifacts/dom');
   const shotDir = path.join(__dirname, '../artifacts/screenshots');
@@ -12,7 +12,10 @@ const path = require('path');
   fs.mkdirSync(shotDir, { recursive: true });
 
   const browser = await chromium.launch({ headless: false });
-  const page = await browser.newPage();
+  const context = await browser.newContext({
+    storageState: path.join(__dirname, 'auth', 'auth.json')
+  });
+  const page = await context.newPage();
 
   try {
     // 1. Go to page
@@ -22,15 +25,15 @@ const path = require('path');
     await page.waitForFunction(() => document.readyState === 'complete');
 
     // 3. Optional stability buffer (important for JS-heavy pages)
-    await page.waitForTimeout(1000);
+    await page.waitForLoadState('networkidle');
 
     // 4. Screenshot
     await page.screenshot({
-      path: path.join(shotDir, 'login-page.png'),
+      path: path.join(shotDir, 'Transfers-page.png'),
       fullPage: true
     });
 
-    // 5. DOM snapshot (generic login-page scan)
+    // 5. DOM snapshot (generic Transfers-page scan)
     const elements = await page.evaluate(() => {
       return Array.from(document.querySelectorAll('input, button, label, select, textarea, a')).map(el => ({
         tag: el.tagName,
@@ -42,7 +45,7 @@ const path = require('path');
     });
 
     fs.writeFileSync(
-      path.join(domDir, 'login-page.json'),
+      path.join(domDir, 'Transfers-page.json'),
       JSON.stringify(elements, null, 2)
     );
 

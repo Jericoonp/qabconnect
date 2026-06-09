@@ -29,7 +29,7 @@ test.describe('Login failure behavior', () => {
       return;
     }
 
-    const screenshotDir = path.resolve(__dirname, '../artifacts/screenshots');
+    const screenshotDir = path.resolve(__dirname, '../screenshotPath');
     fs.mkdirSync(screenshotDir, { recursive: true });
 
     const screenshotPath = path.join(

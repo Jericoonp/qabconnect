@@ -1,0 +1,142 @@
+[
+  {
+    "tag": "A",
+    "id": null,
+    "name": null,
+    "type": null,
+    "text": null
+  },
+  {
+    "tag": "A",
+    "id": null,
+    "name": null,
+    "type": null,
+    "text": "Dashboard"
+  },
+  {
+    "tag": "A",
+    "id": null,
+    "name": null,
+    "type": null,
+    "text": "Transfers"
+  },
+  {
+    "tag": "A",
+    "id": null,
+    "name": null,
+    "type": null,
+    "text": "Potential Exchange"
+  },
+  {
+    "tag": "A",
+    "id": null,
+    "name": null,
+    "type": null,
+    "text": "Matches"
+  },
+  {
+    "tag": "A",
+    "id": null,
+    "name": null,
+    "type": null,
+    "text": "Tenants"
+  },
+  {
+    "tag": "A",
+    "id": null,
+    "name": null,
+    "type": null,
+    "text": "Properties"
+  },
+  {
+    "tag": "A",
+    "id": null,
+    "name": null,
+    "type": null,
+    "text": "My Teams"
+  },
+  {
+    "tag": "A",
+    "id": null,
+    "name": null,
+    "type": null,
+    "text": "Reports"
+  },
+  {
+    "tag": "A",
+    "id": null,
+    "name": null,
+    "type": null,
+    "text": "Settings"
+  },
+  {
+    "tag": "A",
+    "id": null,
+    "name": null,
+    "type": null,
+    "text": "Log out"
+  },
+  {
+    "tag": "INPUT",
+    "id": null,
+    "name": null,
+    "type": "text",
+    "text": null
+  },
+  {
+    "tag": "INPUT",
+    "id": "ag-122-input",
+    "name": null,
+    "type": "checkbox",
+    "text": null
+  },
+  {
+    "tag": "INPUT",
+    "id": "ag-98-input",
+    "name": null,
+    "type": "checkbox",
+    "text": null
+  },
+  {
+    "tag": "INPUT",
+    "id": "ag-102-input",
+    "name": null,
+    "type": "checkbox",
+    "text": null
+  },
+  {
+    "tag": "INPUT",
+    "id": "ag-106-input",
+    "name": null,
+    "type": "checkbox",
+    "text": null
+  },
+  {
+    "tag": "INPUT",
+    "id": "ag-110-input",
+    "name": null,
+    "type": "checkbox",
+    "text": null
+  },
+  {
+    "tag": "INPUT",
+    "id": "ag-114-input",
+    "name": null,
+    "type": "checkbox",
+    "text": null
+  },
+  {
+    "tag": "INPUT",
+    "id": "ag-118-input",
+    "name": null,
+    "type": "checkbox",
+    "text": null
+  },
+  {
+    "tag": "INPUT",
+    "id": "ag-235-input",
+    "name": null,
+    "type": "checkbox",
+    "text": null
+  }
+]
